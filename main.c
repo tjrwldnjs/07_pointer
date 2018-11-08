@@ -7,14 +7,18 @@ int main(void) {
 	
 	int x = 10;
 	int y = 20;
-	
 	int *ptr;
 	
 	ptr = &x;
-	
-	printf("ptr = %i", &x);
+	printf("x : %i\n", *ptr);
 	
 	ptr = &y;
+	printf("y : %i\n", *ptr);
 	
-	printf("ptr = %i", &y);
+	ptr = &x;
+	*ptr = 20;
+	printf("x : %i\n", x);
+	
+	return 0;
 }
+
